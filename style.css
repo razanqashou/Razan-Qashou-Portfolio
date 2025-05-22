@@ -90,7 +90,7 @@ h6,
 
 h1,
 .h1 {
-  font-size: 70px;
+  font-size: 60px;
   font-family: 'Inter', sans-serif;
 
 }
@@ -120,22 +120,16 @@ h6,
 
 }
 
-
-@media only screen and (max-width: 580px) {
-
-  h1,
-  .h1 {
-    font-size: 55px;
-
+@media (max-width: 767px) {
+  h1, .h1 {
+    font-size: 30px;
+  }
+  .lead-paragraph{
+    font-size: 13px  !important;
   }
 
-  h2,
-  .h2 {
-    font-size: 35px;
 
-  }
 }
-
 
 em {
   font-weight: 700;
@@ -160,7 +154,14 @@ a {
   transition: all 0.3s ease-out;
   cursor: pointer;
 }
-
+.cv{
+  color: rgb(145, 116, 142)
+}
+.about-btn:hover {
+  color: rgb(241, 209, 238);
+  text-decoration: none;
+  background-color: #97407b;
+}
 a:hover {
   color: var(--accent-color);
   text-decoration: none;
@@ -386,11 +387,16 @@ header.position-fixed {
   background: var(--dark-color);
 }
 
+.offcanvas-header .btn-close {
+  color: var(--accent-color);
+}
 
 @media only screen and (max-width: 1200px) {
 
   .offcanvas-btn {
     display: block;
+   
+        
   }
 
   .hero-sidebar {
